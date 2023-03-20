@@ -1,7 +1,9 @@
+@import url('https://fontlibrary.org//face/assailand');
 body, html {
   margin: 0;
   height: 100%;
   width: 100vw;
+  font-family: 'AzeriSansRegular'
 }
 
 * {
@@ -10,7 +12,6 @@ body, html {
 
 img {
   margin: 0;
-  /* border: solid green; */
   width: 50px;
 }
 
@@ -30,8 +31,6 @@ img {
   grid-area: header;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  /* gap: 5px; */
-  /* border: solid black; */
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -39,7 +38,6 @@ img {
 .search {
   display: grid;
   grid-template-columns: auto 5fr repeat(3, auto);
-  /* border: solid red; */
   height: min-content;
   align-items: center;
   justify-items: stretch;
@@ -52,20 +50,16 @@ button {
   border-radius: 1.5rem;
   background-color: #16a34a;
   border: none;
-  font-weight: bolder;
+  font-weight: bold;
   font-stretch: extra-expanded;
+  font-size: 1.25rem;
 }
 form {
-  /* border: solid olive; */
   margin-right: 50px;
 }
 
-/* span {
-  border: solid gold
-} */
 
 input {
-  /* border: solid hotpink; */
   width: 100%;
   height: initial;
   border-radius: 0.70rem;
@@ -77,12 +71,9 @@ input {
   align-items: center;
   justify-content: right;
   gap: 20px;
-  /* height: 50%; */
-  /* border: solid turquoise; */
 }
 
 .greeting-profile {
-  /* border: solid orchid; */
   width: min-content;
   display: grid;
   grid-template-rows: repeat(autofit, 1fr);
@@ -92,13 +83,8 @@ input {
 height: 1.5rem;
 }
 
-/* .greeting-profile .greeting {
-  border: solid firebrick;
-
-} */
 
 .greeting-profile .profile-name {
-  /* border: solid silver; */
   width: min-content;
 }
 
@@ -119,12 +105,10 @@ height: 1.5rem;
 }
 
 .title {
-  /* border: solid navy; */
   display: grid;
   grid-template-columns: auto auto;
   justify-content: left;
   gap: 20px;
-  /* align-content: stretch; */
   padding-left: 30px;
 }
 
@@ -152,24 +136,32 @@ li {
 .main {
   padding: 20px;
   background-color: #86efac;
-  /* grid-area: main;display: grid;
-  grid-template-columns: 4fr 1fr; */
 }
 
 .cards {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-columns: repeat(auto-fill, 400px);
   gap: 20px;
 }
 
 .card {
-  /* width: 200px; */
   border: solid green;
   padding: 1rem;
   border-radius: 0.75rem;
   background-color:#DCFCE7;
   box-shadow: 6px 6px #4ADE80;
+  line-height: 1.25rem;
+}
+
+.card img{
+  width: 20px;
+}
+
+.card-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .sidebar {
@@ -184,6 +176,8 @@ li {
   padding: 10px;
   border-radius: 1rem;
   background-color:#DCFCE7;
+  line-height: 1.25rem;
+  font-size: 0.80rem;
 }
 
 .posts {
